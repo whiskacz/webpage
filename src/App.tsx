@@ -1,10 +1,13 @@
 import './app.scss'
+import Main from './components/main/Main';
 
 function App() {
 
   return (
     <>
-    <section>Main</section>
+    <section id='Home'>
+      <Main />
+    </section>
     <section>Parallax</section>
     <section>skills</section>
     <section>Parallax2</section>
