@@ -5,13 +5,25 @@ function App() {
 
   return (
     <>
-    <section id='Home'>
+    <section id='Homepage'>
       <Main />
     </section>
-    <section>Parallax</section>
-    <section>skills</section>
-    <section>Parallax2</section>
-    <section>contact</section>
+
+    <section id='Parallax1'>
+      Parallax1
+    </section>
+
+    <section id='Parallax2'>
+      Parallax2
+    </section>
+
+    <section id='Skills'>
+      Skills
+    </section>
+
+    <section id='Contact'>
+      Contact
+    </section>
     
     </>
   );
