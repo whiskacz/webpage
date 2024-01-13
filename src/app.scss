@@ -8,6 +8,7 @@
 html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    background-color: #235789;
 }
 
 a {
@@ -20,3 +21,6 @@ section {
     scroll-snap-align: center;
     overflow: hidden;
 }
+// #Parallax {
+//     height: 300vh;
+// }

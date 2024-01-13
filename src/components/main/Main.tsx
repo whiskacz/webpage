@@ -1,4 +1,3 @@
-import Sidebar from '../sidebar/Sidebar';
 import './main.scss';
 import { motion } from 'framer-motion'
 
@@ -58,7 +57,6 @@ const Main = () => {
 
   return (
     <div className='main'>
-        <Sidebar />
         <motion.div className='title' 
         variants={leftVariants}
         initial="initial"

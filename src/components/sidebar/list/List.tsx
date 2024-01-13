@@ -4,7 +4,7 @@ const List = () => {
 
   const pages = [
     "Homepage",
-    "Parallax1",
+    "Parallax",
     "Parallax2",
     "Skills",
     "Contact"

@@ -1,16 +1,19 @@
 import './app.scss'
 import Main from './components/main/Main';
+import Parallax from './components/parallax/Parallax';
+import Sidebar from './components/sidebar/Sidebar';
 
 function App() {
 
   return (
     <>
+    <Sidebar />
     <section id='Homepage'>
       <Main />
     </section>
 
-    <section id='Parallax1'>
-      Parallax1
+    <section id='Parallax'>
+      <Parallax />
     </section>
 
     <section id='Parallax2'>
