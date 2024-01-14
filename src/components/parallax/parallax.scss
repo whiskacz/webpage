@@ -4,25 +4,37 @@
     height: 100%;
 
     .element{
-        position: absolute;
-        background-size: cover;
+        position: absolute; 
         overflow: hidden;
+        background-repeat: no-repeat;
     }
 
-    .background1 {   
+    .backgroundOval { 
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: top;
         z-index: 5;
     }
 
+    .backgroundMain { 
+        background-size: cover;
+        background-position: top;
+        z-index: 2;
+    }
+
     .mount1 {
+        width: 60%;
         bottom: 0;
         left: 0;
-        z-index: 4;
+        z-index: 3;
     }
 
     .mount2 {
+        width: 70%;
         bottom: 0;
         right: 0;
-        z-index: 3;
+        z-index: 4;
     }
 
 }
