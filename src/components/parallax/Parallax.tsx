@@ -1,37 +1,38 @@
-import { motion, useScroll } from 'framer-motion';
+import { motion, useScroll, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import './parallax.scss';
 
 function Parallax() {
 
-  let scrollYProgressValue: number = 0
+  const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
   const {scrollYProgress} = useScroll({
     target:ref,
     offset:["start start", "end end"]
   })
-useEffect(() => {
-    // Nasłuchiwanie zmian w scrollYProgress
-    const updateOpacity = (value: number) => {
-      scrollYProgressValue = parseFloat(value.toFixed(2)) + 1
-      console.log(`postęp przewijania ${scrollYProgressValue}`);
+  useEffect(() => {
+    const updateScale = (value: number) => {
+      const scaledValue = parseFloat(value.toFixed(2))*6 + 1;
+      console.log(`postęp przewijania ${scaledValue}`);
+      
+      // Używamy animate do płynnej zmiany wartości scale
+      controls.start({ scale: scaledValue });
     };
 
-    const unsubscribe = scrollYProgress.onChange(updateOpacity);
+    const unsubscribe = scrollYProgress.onChange(updateScale);
 
-    // Oczyszczanie nasłuchiwacza przy odmontowywaniu komponentu
     return () => {
       unsubscribe();
     };
-  }, [scrollYProgress]);
+  }, [scrollYProgress, controls]);
 
   return (
     <motion.div ref={ref} className='parallaxContainer'>
-      <img 
+      <motion.img 
       src="/src/images/oval.png" 
       alt="ovalPNG" 
       className='backgroundOval element'
-      style={{ transform: `scale(${scrollYProgressValue})` }}
+      animate={controls}
       />
       {/* <img src="/src/images/backgroundMain.jpg" alt="backgroundMain" className='backgroundMain element' />
       <img src="/src/images/mount1.png" alt="mount1" className='mount1 element' />
