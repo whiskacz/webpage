@@ -1,9 +1,9 @@
 import './main.scss';
-import { motion } from 'framer-motion'
+import { Variants, motion } from 'framer-motion'
 
 const Main = () => {
 
-    const leftVariants = {
+    const leftVariants: Variants = {
         initial: {
             x: -500,
             opacity: 0
@@ -25,7 +25,7 @@ const Main = () => {
         }
     };
 
-    const rightVariants = {
+    const rightVariants: Variants = {
         initial: {
             x: 500,
             opacity: 0
@@ -41,14 +41,14 @@ const Main = () => {
     };
 
 
-    const sliderVariants = {
+    const sliderVariants: Variants = {
         initial: {
             x: 2000,
         },
         animate: {
             x: "-210%",   
             transition: {
-                repeat:Infinity,
+                repeat: Infinity,
                 repeatType:"loop",
                 duration: 20,
             },
