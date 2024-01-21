@@ -15,7 +15,7 @@
     .backgroundMain1 { 
         position: absolute;
         width: 100%;
-        bottom: -500px;
+        bottom: -800px;
         z-index: 2;
         background-size: cover;
     }
@@ -41,5 +41,33 @@
         bottom: 0;
         left: 0;
         z-index: 3;
+    }
+
+    .cloud1 {
+        position: absolute;
+        width: 30%;
+        top: 40%;
+        left: 20%;
+        z-index: 4;
+    }
+
+    .cloud2 {
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 60%;
+        z-index: 3;
+    }
+    .title{
+        color: rgba(243, 248, 242, 0.5) ;
+        position: absolute;
+        width: 100%;
+        top: 10vh;
+        right: -100vw;
+        font-size: 20vh;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-family: 'Anton', sans-serif;
+        user-select: none;
     }
 }

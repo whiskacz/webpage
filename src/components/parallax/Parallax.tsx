@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { animate, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import './parallax.scss';
 
@@ -22,45 +22,45 @@ const Parallax = () => {
     },
   };
 
-  const mount1Variant = {
-    hidden: {
-      x:0,
-      y:0,
-    },
-    visible: {
-      x:600,
-      y:500,
-      transition: {
-        duration: 4,
-        delay: 2.1,
-      },
-    },
-  };
+  // const mount1Variant = {
+  //   hidden: {
+  //     x:0,
+  //     y:0,
+  //   },
+  //   visible: {
+  //     x:600,
+  //     y:500,
+  //     transition: {
+  //       duration: 4,
+  //       delay: 2.1,
+  //     },
+  //   },
+  // };
 
-  const mount2Variant = {
-    hidden: {
-      x:0,
-      y:0,
-    },
-    visible: {
-      x:-600,
-      y:1500,
-      transition: {
-        duration: 4.5,
-        delay: 2.2,
-      },
-    },
-  };
+  // const mount2Variant = {
+  //   hidden: {
+  //     x:0,
+  //     y:0,
+  //   },
+  //   visible: {
+  //     x:-600,
+  //     y:1500,
+  //     transition: {
+  //       duration: 2.5,
+  //       delay: 2.2,
+  //     },
+  //   },
+  // };
 
   const backgroundMain1Variant = {
     hidden: {
       y:0,
     },
     visible: {
-      y:-500,
+      y:-300,
       transition: {
         ease: "easeOut",
-        duration: 7,
+        duration: 4,
         delay: 0.8,
       },
     },
@@ -71,14 +71,79 @@ const Parallax = () => {
       y:0,
     },
     visible: {
-      y:-1094,
+      y:-800,
       transition: {
         ease: "easeOut",
-        duration: 8,
+        duration: 3,
         delay: 0.3,
       },
     },
   };
+
+  const cloud1Variant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 3,
+      },
+    },
+    moving: {
+      x: ['20vw', '-40vw'],
+      transition: {
+        ease: 'linear',
+        duration: 80,
+        repeat: Infinity,
+        repeatType: 'reverse',
+      },
+    },
+  }
+
+  const cloud2Variant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1.2,
+        delay: 3.5,
+      },
+    },
+    moving: {
+      x: ['10vw', '-25vw'],
+      transition: {
+        ease: 'linear',
+        duration: 130,
+        repeat: Infinity,
+        repeatType: 'reverse',
+      },
+    },
+  }
+
+  const textVariant = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 1,
+      },
+    },
+    moving: {
+      x: "-200%",   
+        transition: {
+            repeat: Infinity,
+            repeatType:"loop",
+            duration: 20,
+        },
+    },
+  }
 
   return (
     <div className="parallaxContainer" ref={ref}>
@@ -107,6 +172,22 @@ const Parallax = () => {
         animate={isInView ? "visible" : "hidden"}
         /> */}
         <motion.img 
+        src="/src/images/cloud1.png" 
+        alt="cloud1" 
+        className='cloud1'
+        variants={cloud1Variant}
+        initial="hidden"
+        animate={isInView ? ["visible", "moving"] : "hidden"}
+        />
+        <motion.img 
+        src="/src/images/cloud2.png" 
+        alt="cloud2" 
+        className='cloud2'
+        variants={cloud2Variant}
+        initial="hidden"
+        animate={isInView ? ["visible", "moving"] : "hidden"}
+        />
+        <motion.img 
         src="/src/images/backgroundMain1.png" 
         alt="backgroundMain1" 
         className='backgroundMain1'
@@ -122,6 +203,12 @@ const Parallax = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         />
+        <motion.div
+        className="title"
+        variants={textVariant}
+        initial="hidden"
+        animate={isInView ? ["visible", "moving"] : "hidden"}
+        >Parallax is here!</motion.div>
 
     </div>
   )
