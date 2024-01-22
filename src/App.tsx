@@ -2,6 +2,7 @@ import './app.scss'
 import Main from './components/main/Main';
 import Parallax from './components/parallax/Parallax';
 import Sidebar from './components/sidebar/Sidebar';
+import Bento from './components/bento/Bento';
 
 function App() {
 
@@ -16,8 +17,8 @@ function App() {
       <Parallax />
     </section>
 
-    <section id='Parallax2'>
-      Parallax2
+    <section id='Bento'>
+      <Bento />
     </section>
 
     <section id='Skills'>

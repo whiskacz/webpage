@@ -1,4 +1,4 @@
-import { animate, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import './parallax.scss';
 
@@ -140,7 +140,7 @@ const Parallax = () => {
         transition: {
             repeat: Infinity,
             repeatType:"loop",
-            duration: 20,
+            duration: 15,
         },
     },
   }

@@ -5,7 +5,7 @@ const List = () => {
   const pages = [
     "Homepage",
     "Parallax",
-    "Parallax2",
+    "Bento",
     "Skills",
     "Contact"
   ];
