@@ -97,7 +97,7 @@ const Parallax = () => {
         ease: 'linear',
         duration: 80,
         repeat: Infinity,
-        repeatType: 'reverse',
+        repeatType: "reverse" as const,
       },
     },
   }
@@ -119,7 +119,7 @@ const Parallax = () => {
         ease: 'linear',
         duration: 130,
         repeat: Infinity,
-        repeatType: 'reverse',
+        repeatType: "reverse" as const,
       },
     },
   }
@@ -139,7 +139,7 @@ const Parallax = () => {
       x: "-200%",   
         transition: {
             repeat: Infinity,
-            repeatType:"loop",
+            repeatType:"loop" as const,
             duration: 15,
         },
     },
