@@ -19,7 +19,7 @@ const Bento = () => {
                 damping: 10,
                 stiffness: 50,
                 duration: 1,
-                delay: 1,
+                delay: 0.5,
             },
         },
     };
@@ -34,7 +34,7 @@ const Bento = () => {
                 damping: 10,
                 stiffness: 50,
                 duration: 1,
-                delay: 1.5,
+                delay: 1,
             },
         },
     };
@@ -49,7 +49,7 @@ const Bento = () => {
                 damping: 10,
                 stiffness: 50,
                 duration: 1,
-                delay: 1.8,
+                delay: 1.3,
             },
         },
     };
@@ -61,7 +61,7 @@ const Bento = () => {
             opacity:1,
             transition: {
                 duration: 0.3,
-                delay: 2.7,
+                delay: 2.2,
             },
         },
     };
@@ -76,7 +76,7 @@ const Bento = () => {
                 damping: 10,
                 stiffness: 50,
                 duration: 1,
-                delay: 2.9,
+                delay: 2.4,
             },
         },
     };
@@ -91,7 +91,7 @@ const Bento = () => {
                 damping: 10,
                 stiffness: 50,
                 duration: 1,
-                delay: 3.3,
+                delay: 2.8,
             },
         },
     };
@@ -103,7 +103,7 @@ const Bento = () => {
             opacity:1,
             transition: {
                 duration: 0.3,
-                delay: 4.8,
+                delay: 4.3,
             },
         },
     };
@@ -114,7 +114,7 @@ const Bento = () => {
         visible: {
           opacity: 1,
           transition: {
-            delay: 6,
+            delay: 5.5,
             duration: 0.6,
             repeat: Infinity,
             repeatType: "reverse" as const,
@@ -184,8 +184,9 @@ const Bento = () => {
             <motion.div
                 variants={bentoVariant}
                 initial="hidden"
+                className="bento"
                 animate={isInView ? "visible" : "hidden"}>
-                    <div>BENTO</div>
+                BENTO
                     <motion.div
                     variants={questionVariant}
                     initial="hidden"

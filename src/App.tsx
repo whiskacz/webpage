@@ -1,8 +1,9 @@
 import './app.scss'
-import Main from './components/main/Main';
+import Hero from './components/hero/Hero';
 import Parallax from './components/parallax/Parallax';
 import Sidebar from './components/sidebar/Sidebar';
 import Bento from './components/bento/Bento';
+import AppPreview from './components/appPreview/AppPreview';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <>
     <Sidebar />
     <section id='Homepage'>
-      <Main />
+      <Hero />
     </section>
 
     <section id='Parallax'>
@@ -19,6 +20,10 @@ function App() {
 
     <section id='Bento'>
       <Bento />
+    </section>
+
+    <section id='AppPreview'>
+      <AppPreview />
     </section>
 
     <section id='Skills'>

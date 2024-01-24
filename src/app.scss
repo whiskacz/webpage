@@ -1,8 +1,16 @@
+:root{
+    --white: #f3f8f2;
+    --black: #020100;
+    --orange: #ff4f00;
+    --violet: #251351;
+    --indigo: #a997df;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: 'Anton', sans-serif;
 }
 
 html {
@@ -26,6 +34,7 @@ section {
 // .fonts {
 
 //     //'Anton'
-//     //'Climate Crisis    
+//     //'Climate Crisis
+//font-family: 'Roboto', sans-serif;    
 
 // }

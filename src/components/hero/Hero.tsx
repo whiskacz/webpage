@@ -1,7 +1,8 @@
-import './main.scss';
+import './hero.scss';
 import { Variants, motion } from 'framer-motion'
+import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-const Main = () => {
+const Hero = () => {
 
     const leftVariants: Variants = {
         initial: {
@@ -82,8 +83,21 @@ const Main = () => {
         animate="animate">
         Paweł Błasiak
         </motion.div>
+        
+
+        <div className='icoContainer'>
+            <a href="">
+                <FaInstagram />
+            </a>
+            <a href="">
+                <FaLinkedinIn />
+            </a>
+            <a href="">
+                <FaGithub />
+            </a>        
+        </div>
     </div>
   );
 }
 
-export default Main;
+export default Hero;

@@ -6,6 +6,7 @@ const List = () => {
     "Homepage",
     "Parallax",
     "Bento",
+    "MovieManager",
     "Skills",
     "Contact"
   ];
