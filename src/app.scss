@@ -17,16 +17,15 @@ html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: #235789;
+    
+    
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-section {
-    height: 100vh;
-    max-width: 100vw;
+section {   
     scroll-snap-align: center;
     overflow: hidden;
 }

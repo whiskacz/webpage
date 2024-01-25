@@ -56,8 +56,21 @@ const Hero = () => {
         },
     }
 
+    const icoVariants = {
+        initial: {
+          opacity: 0,
+        },
+        animate: {
+          opacity: 1,
+          transition: {
+            duration: 0.3,
+            staggerChildren: 0.3,
+          },
+        },
+    }
+
   return (
-    <div className='main'>
+    <div className='heroContainer'>
         <motion.div className='title' 
         variants={leftVariants}
         initial="initial"
@@ -84,18 +97,33 @@ const Hero = () => {
         Paweł Błasiak
         </motion.div>
         
-
-        <div className='icoContainer'>
-            <a href="">
+        <motion.div 
+        className='icoContainer'
+        variants={icoVariants}
+        initial="initial"
+        animate="animate">
+            <motion.a 
+            href=""
+            variants={icoVariants}
+            whileHover={{scale:1.2}} 
+            whileTap={{scale: 0.9}}>
                 <FaInstagram />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a 
+            href=""
+            variants={icoVariants}
+            whileHover={{scale:1.2}} 
+            whileTap={{scale: 0.9}}>
                 <FaLinkedinIn />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a 
+            href=""
+            variants={icoVariants}
+            whileHover={{scale:1.3}} 
+            whileTap={{scale: 0.9}}>
                 <FaGithub />
-            </a>        
-        </div>
+            </motion.a>        
+        </motion.div>
     </div>
   );
 }

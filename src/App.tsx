@@ -4,6 +4,7 @@ import Parallax from './components/parallax/Parallax';
 import Sidebar from './components/sidebar/Sidebar';
 import Bento from './components/bento/Bento';
 import AppPreview from './components/appPreview/AppPreview';
+import Skills from './components/skills/Skills';
 
 function App() {
 
@@ -22,16 +23,12 @@ function App() {
       <Bento />
     </section>
 
-    <section id='AppPreview'>
+    <section id='MovieManager'>
       <AppPreview />
     </section>
 
     <section id='Skills'>
-      Skills
-    </section>
-
-    <section id='Contact'>
-      Contact
+      <Skills />
     </section>
     
     </>
