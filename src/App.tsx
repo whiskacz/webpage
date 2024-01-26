@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar/Sidebar';
 import Bento from './components/bento/Bento';
 import AppPreview from './components/appPreview/AppPreview';
 import Skills from './components/skills/Skills';
+import Contact from './components/contact/Contact';
 
 function App() {
 
@@ -29,6 +30,10 @@ function App() {
 
     <section id='Skills'>
       <Skills />
+    </section>
+
+    <section id='Contact'>
+      <Contact />
     </section>
     
     </>

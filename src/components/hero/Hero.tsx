@@ -92,7 +92,8 @@ const Hero = () => {
 
         <motion.div 
         className="sliderContainer" 
-        variants={sliderVariants} initial="initial" 
+        variants={sliderVariants} 
+        initial="initial" 
         animate="animate">
         Paweł Błasiak
         </motion.div>
