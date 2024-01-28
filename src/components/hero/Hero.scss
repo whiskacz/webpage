@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .heroContainer{
     position: relative;
     height: 100vh;
@@ -10,14 +12,26 @@
         top: 15%;
         left: 25%;
         font-size: 5vw;
+        
+        @include mobile{
+            top: 30%;
+            left: 15%;
+            font-size: 5vh;
+        }
     }
     .now {
         position: absolute;
         top: 20%;
         right: 22%;
         font-size: 15vw;
-        color: #251351;
+        color: var(--violet);
         text-transform: uppercase;
+
+        @include mobile{
+            top: 40%;
+            right: 10%;
+            font-size: 17vh;
+        }
     }
     img {
         position: absolute;
@@ -49,9 +63,18 @@
         align-items: center;
         justify-content: space-between;
 
+        @include mobile{
+            width: 15vh;
+        }
+
         > a {
             font-size: 2vw;
             padding: 1vw;
+
+            @include mobile{
+                font-size: 3vh;
+                padding: 1vh;
+            }
         }
 
     }

@@ -28,13 +28,13 @@ function App() {
       <AppPreview />
     </section>
 
-    <section id='Skills'>
+    {/* <section id='Skills'>
       <Skills />
-    </section>
+    </section> */}
 
-    <section id='Contact'>
+    {/* <section id='Contact'>
       <Contact />
-    </section>
+    </section> */}
     
     </>
   );

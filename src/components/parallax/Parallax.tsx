@@ -140,7 +140,7 @@ const Parallax = () => {
         transition: {
             repeat: Infinity,
             repeatType:"loop" as const,
-            duration: 15,
+            duration: 17,
         },
     },
   }

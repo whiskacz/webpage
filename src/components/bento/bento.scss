@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .bentoContainer{
     width: 100vw;
     height: 100vh;
@@ -14,7 +16,12 @@
         grid-template-columns: 4fr 3fr 1fr;
         grid-template-rows: 3fr 1fr 1fr 1fr 2fr;
         gap: 20px;
-
+        
+        @include mobile{
+            width: 80%;
+            height: 72%;
+            gap: 1vh;
+        }
 
 
         :nth-child(1){
@@ -22,6 +29,11 @@
             grid-row: 1 / 2;
             font-size: 8rem;
             //would
+
+            @include mobile{
+            font-size: 5rem;
+
+        }
         }
 
         :nth-child(2){
@@ -29,6 +41,10 @@
             grid-row: 2 / 4;
             font-size: 5rem;
             //you
+
+            @include mobile{
+                font-size: 3rem;
+            }
         }
 
         :nth-child(3){
@@ -37,6 +53,10 @@
             font-size: 3rem;
             writing-mode: vertical-lr;
             //like
+
+            @include mobile{
+                font-size: 1.3rem;
+            }
         }
 
         :nth-child(4){
@@ -44,14 +64,23 @@
             grid-row: 2 / 3;
             font-size: 2rem;
             //to
+            
+            @include mobile{
+                font-size: 2rem;
+            }
+            
         }
 
         :nth-child(5){
             grid-column: 1 / 2;
             grid-row: 2 / 5;
             font-size: 11rem;
-            color: var(--orange)
-            //taste#
+            color: var(--orange);
+            //taste
+
+            @include mobile{
+                font-size: 4rem;
+            }
         }
 
         :nth-child(6){
@@ -59,6 +88,10 @@
             grid-row: 4 / 5;
             font-size: 3rem;
             //some
+
+            @include mobile{
+                font-size: 1.3rem;
+            }
         }
 
         .bento{
@@ -69,6 +102,10 @@
             font-size: 6em;
             font-family: 'Climate Crisis', sans-serif !important;
             //bento
+
+            @include mobile{
+                font-size: 3.5rem;
+            }
         }
         .bentoIco{
             width: 3rem;
