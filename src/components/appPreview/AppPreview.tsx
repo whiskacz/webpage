@@ -8,7 +8,7 @@ const AppPreview = () => {
   const isInView = useInView(ref, {margin:"-100px"});
 
   const [currentImage, setCurrentImage] = useState(0);
-  const images = ['/src/images/mm1.jpg', '/src/images/mm2.jpg', '/src/images/mm3.jpg', '/src/images/mm4.jpg'];
+  const images = ['/images/mm1.jpg', '/images/mm2.jpg', '/images/mm3.jpg', '/images/mm4.jpg'];
 
   useEffect(() => {
     const intervalId = setInterval(() => {

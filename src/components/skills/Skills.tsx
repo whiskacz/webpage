@@ -7,11 +7,11 @@ const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {margin:"-100px"});
 
-  const frontendIcons = [ '/src/images/frontend/react.svg', '/src/images/frontend/js.svg', '/src/images/frontend/typescript.svg', '/src/images/frontend/html.svg',  '/src/images/frontend/css.svg',  '/src/images/frontend/sass.svg', '/src/images/frontend/tailwind.svg', '/src/images/frontend/bootstrap.svg','/src/images/frontend/wordpress.svg',]
+  const frontendIcons = [ '/images/frontend/react.svg', '/images/frontend/js.svg', '/images/frontend/typescript.svg', '/images/frontend/html.svg',  '/images/frontend/css.svg',  '/images/frontend/sass.svg', '/images/frontend/tailwind.svg', '/images/frontend/bootstrap.svg','/images/frontend/wordpress.svg',]
 
-  const backendIcons = [ '/src/images/backend/nodejs.svg', '/src/images/backend/express.svg', '/src/images/backend/mongodb.svg', '/src/images/backend/docker.svg',  '/src/images/backend/restApi.svg',  '/src/images/backend/jest.svg']
+  const backendIcons = [ '/images/backend/nodejs.svg', '/images/backend/express.svg', '/images/backend/mongodb.svg', '/images/backend/docker.svg',  '/images/backend/restApi.svg',  '/images/backend/jest.svg']
 
-  const otherIcons = [ '/src/images/other/git.svg', '/src/images/other/autocad.svg', '/src/images/other/canva.svg', '/src/images/other/scrum.svg',  '/src/images/other/photoshop.svg',  '/src/images/other/gimp.svg' ]
+  const otherIcons = [ '/images/other/git.svg', '/images/other/autocad.svg', '/images/other/canva.svg', '/images/other/scrum.svg',  '/images/other/photoshop.svg',  '/images/other/gimp.svg' ]
 
   const panelVariants = {
     initial: {

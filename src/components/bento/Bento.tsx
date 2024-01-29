@@ -194,7 +194,7 @@ const Bento = () => {
                     ?</motion.div>
             </motion.div>
             <motion.img 
-                src="/src/images/bentoIco.svg" 
+                src="/images/bentoIco.svg" 
                 alt="bentoIco"
                 className="bentoIco" 
                 variants={icoVariant}

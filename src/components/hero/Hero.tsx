@@ -2,6 +2,7 @@ import './hero.scss';
 import { Variants, motion, useInView } from 'framer-motion'
 import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { useRef } from 'react';
+import scrollIco from "/images/scroll-bottom-icon.svg"
 
 const Hero = () => {
 
@@ -92,7 +93,7 @@ const Hero = () => {
         <motion.img 
         variants={leftVariants}
         animate={isInView ? "scrollButton" : "hidden"}
-        src="src/images/scroll-bottom-icon.svg" alt="scroll ico" />
+        src={scrollIco} alt="scroll ico" />
 
         <motion.div 
         className="sliderContainer" 

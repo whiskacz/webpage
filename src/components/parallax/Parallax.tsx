@@ -148,7 +148,7 @@ const Parallax = () => {
   return (
     <div className="parallaxContainer" ref={ref}>
       <motion.img
-        src="/src/images/oval.png"
+        src="/images/oval.png"
         alt="backgroundOval"
         className="backgroundOval"
         variants={ovalVariant}
@@ -172,7 +172,7 @@ const Parallax = () => {
         animate={isInView ? "visible" : "hidden"}
         /> */}
         <motion.img 
-        src="/src/images/cloud1.png" 
+        src="/images/cloud1.png" 
         alt="cloud1" 
         className='cloud1'
         variants={cloud1Variant}
@@ -180,7 +180,7 @@ const Parallax = () => {
         animate={isInView ? ["visible", "moving"] : "hidden"}
         />
         <motion.img 
-        src="/src/images/cloud2.png" 
+        src="/images/cloud2.png" 
         alt="cloud2" 
         className='cloud2'
         variants={cloud2Variant}
@@ -188,7 +188,7 @@ const Parallax = () => {
         animate={isInView ? ["visible", "moving"] : "hidden"}
         />
         <motion.img 
-        src="/src/images/backgroundMain1.png" 
+        src="/images/backgroundMain1.png" 
         alt="backgroundMain1" 
         className='backgroundMain1'
         variants={backgroundMain1Variant}
@@ -196,7 +196,7 @@ const Parallax = () => {
         animate={isInView ? "visible" : "hidden"}
         />
         <motion.img 
-        src="/src/images/backgroundMain2.png" 
+        src="/images/backgroundMain2.png" 
         alt="backgroundMain2" 
         className='backgroundMain2'
         variants={backgroundMain2Variant}
