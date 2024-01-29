@@ -38,6 +38,15 @@
         top: 40%;
         left: 35%;
         width: 3vw;
+
+        @include mobile{
+            
+            top: auto;
+            left: auto;
+            bottom: 20%;
+            right: 43%;
+            width: 7vh;
+        }
         
      }
 

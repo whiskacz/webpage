@@ -108,21 +108,23 @@ const Hero = () => {
         initial="initial"
         animate={isInView ? "animate" : "hidden"}>
             <motion.a 
-            href=""
+            href="https://www.instagram.com/_pawelblasiak_/"
+            target="_blank"
             variants={icoVariants}
             whileHover={{scale:1.2}} 
             whileTap={{scale: 0.9}}>
                 <FaInstagram />
             </motion.a>
             <motion.a 
-            href=""
-            variants={icoVariants}
+            href="https://www.linkedin.com/in/paweł-błasiak-5795612b1"
+            target="_blank"
             whileHover={{scale:1.2}} 
             whileTap={{scale: 0.9}}>
                 <FaLinkedinIn />
             </motion.a>
             <motion.a 
-            href=""
+            href="https://github.com/whiskacz"
+            target="_blank"
             variants={icoVariants}
             whileHover={{scale:1.3}} 
             whileTap={{scale: 0.9}}>
