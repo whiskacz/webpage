@@ -108,14 +108,14 @@ const Hero = () => {
         variants={icoVariants}
         initial="initial"
         animate={isInView ? "animate" : "hidden"}>
-            <motion.a 
+            {/* <motion.a 
             href="https://www.instagram.com/_pawelblasiak_/"
             target="_blank"
             variants={icoVariants}
             whileHover={{scale:1.2}} 
             whileTap={{scale: 0.9}}>
                 <FaInstagram />
-            </motion.a>
+            </motion.a> */}
             <motion.a 
             href="https://www.linkedin.com/in/paweł-błasiak-5795612b1"
             target="_blank"

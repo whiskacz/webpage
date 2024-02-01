@@ -73,16 +73,16 @@
         justify-content: space-between;
 
         @include mobile{
-            width: 15vh;
+            width: 11vh;
         }
 
         > a {
-            font-size: 2vw;
+            font-size: 4vw;
             padding: 1vw;
 
             @include mobile{
-                font-size: 3vh;
-                padding: 1vh;
+                font-size: 4vh;
+                padding: none;
             }
         }
 

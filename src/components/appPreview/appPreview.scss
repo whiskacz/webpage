@@ -41,13 +41,10 @@
             }
         }
 
-
-
-
     }
 
     .infoContainer{
-        width: 60vw;
+        width: 80vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -58,12 +55,11 @@
             margin: 10% auto;
         }
 
-
         .textContainer{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 27vw;
+            width: 35vw;
 
             @include mobile{
                 flex-direction: column;
@@ -81,14 +77,13 @@
 
                 @include mobile{
                     margin: 10% auto;
-                }
-                
+                }              
                 
             }
         }
 
         .imgContainer{
-            width: 30vw;
+            width: 40vw;
             height: 50vh;
             border-radius: 0.5rem;
             object-fit: cover;
@@ -100,6 +95,18 @@
             }
         }
         
+    }
+
+    .linkContainer{
+        text-align: center;
+        width: 100%;
+        font-size: 5vw;
+        color: var(--white);
+
+        > a {
+            color: var(--orange);
+        }
+
     }
     
 
