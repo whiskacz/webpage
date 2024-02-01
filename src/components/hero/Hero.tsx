@@ -1,6 +1,6 @@
 import './hero.scss';
 import { Variants, motion, useInView } from 'framer-motion'
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { useRef } from 'react';
 import scrollIco from "/images/scroll-bottom-icon.svg"
 

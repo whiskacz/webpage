@@ -17,13 +17,13 @@
     .titleContainer{
 
         color: var(--white);
-        font-size: 4rem;
+        font-size: 5rem;
         white-space: nowrap;
 
         @include mobile{
             padding-top: 30% ;
             width: 80%;
-            font-size: 2rem;   
+            font-size: 3rem;   
             white-space: normal;
             text-align: center;
         }
@@ -35,7 +35,7 @@
 
             @include mobile{
                 flex-wrap: wrap;
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 white-space: normal;
                 
             }
@@ -69,7 +69,7 @@
             .text{
                 
                 text-justify: auto;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 color: var(--white);
                 text-align: justify;
                 font-family: 'Roboto', sans-serif;
@@ -100,11 +100,18 @@
     .linkContainer{
         text-align: center;
         width: 100%;
-        font-size: 5vw;
+        font-size: 5rem;
         color: var(--white);
 
         > a {
             color: var(--orange);
+            
+        }
+
+        @include mobile{
+            width: 80%;
+            font-size: 2.5rem;
+            margin-bottom: 20vh;
         }
 
     }
